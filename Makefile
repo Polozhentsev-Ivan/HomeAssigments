@@ -5,7 +5,7 @@ OBJ = main.o Hello.o
 all: $(TARGET)
 $(TARGET): $(OBJ)
 	$(CXX) -o $(TARGET) $(OBJ)
-	
+	rm -f $(OBJ)
 main.o: main.cpp Hello.hpp
 	$(CXX) $(CXXGLAGS) -c main.cpp
 Hello.o: Hello.cpp Hello.hpp
