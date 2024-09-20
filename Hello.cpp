@@ -10,10 +10,13 @@ int hello()
 	std::string name;
 	int k = 0;
 	std::cout << "Hello World!" << std::endl;
-	while (k <5) {
+	while (k != 1) {
+		
 		std::cout << "Enter the name: " << std::endl;
 		getline(std::cin , name);
-		std::cout << "Hello " << name << "!" << std::endl;
-		k += 1; 
+		if (name == "stop" or name == "exit"){
+			break;
+		}
+		std::cout << "Hello " << name << "!" << std::endl; 
 	}
 }
