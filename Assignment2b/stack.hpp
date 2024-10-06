@@ -1,3 +1,6 @@
+/* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
+second homework project
+*/
 #ifndef STACK_HPP
 #define STACK_HPP
 #include <iostream>

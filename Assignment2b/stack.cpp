@@ -1,3 +1,6 @@
+/* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
+second homework project
+*/
 #include "stack.hpp"
 Stack::Stack(int size){
     y = new int[size];

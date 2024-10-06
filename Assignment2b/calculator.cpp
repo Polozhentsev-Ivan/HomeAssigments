@@ -1,3 +1,6 @@
+/* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
+second homework project
+*/
 #include "stack.hpp"
 int calculator( const std::string & input){
     int len = 0;
