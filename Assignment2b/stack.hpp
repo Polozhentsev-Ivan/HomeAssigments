@@ -11,7 +11,7 @@ public:
     ~Stack();
     void add(int x)
     int del();
-    int take();
+    int take() const;
 };
-
+int calculator( const std::string & input)
 #endif
