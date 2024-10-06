@@ -1,6 +1,6 @@
 #include "stack.hpp"
 int main(){
-    std::string input
+    std::string input;
     std::cout << "Write your expression: ";
     std::getline(std::cin, input);
     int result = calculator(input);

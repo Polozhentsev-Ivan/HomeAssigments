@@ -13,8 +13,8 @@ int calculator( const std::string & input){
         if (isdigit(tk[0])){
             stack.add(std::stoi(tk));
         } else {
-            int a = stack.del();
             int b = stack.del();
+            int a = stack.del();
             
             if (tk == "+"){
                 stack.add(a + b);
