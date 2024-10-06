@@ -2,6 +2,7 @@
 #define STACK.HPP
 #include <iostream>
 #include <string>
+#include <sstream>
 class Stack {
 private:
     int* y;

@@ -7,7 +7,7 @@ Stack::~Stack(){
     delete[] y;
 }
 void Stack::add(int x){
-    y[++top];
+    y[++top] = x;
 }
 int Stack::del(){
     return y[top--];
