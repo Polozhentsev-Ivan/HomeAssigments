@@ -1,7 +1,7 @@
-#include <stack.hpp>
+#include "stack.hpp"
 Stack::Stack(int size){
-    y = new int[size]
-    top = -1
+    y = new int[size];
+    top = -1;
 }
 Stack::~Stack(){
     delete[] y;

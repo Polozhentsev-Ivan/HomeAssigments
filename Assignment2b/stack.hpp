@@ -1,5 +1,5 @@
-#ifndef STACK.HPP
-#define STACK.HPP
+#ifndef STACK_HPP
+#define STACK_HPP
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -10,9 +10,9 @@ private:
 public:
     Stack(int size);
     ~Stack();
-    void add(int x)
+    void add(int x);
     int del();
     int take() const;
 };
-int calculator( const std::string & input)
+int calculator( const std::string & input);
 #endif
