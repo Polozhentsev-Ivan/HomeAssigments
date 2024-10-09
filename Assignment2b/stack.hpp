@@ -8,14 +8,14 @@ second homework project
 #include <sstream>
 class Stack {
 private:
-    int* y;
+    double* y;
     int top;
 public:
     Stack(int size);
     ~Stack();
-    void add(int x);
-    int del();
-    int take() const;
+    void add(double x);
+    double del();
+    double take() const;
 };
-int calculator( const std::string & input);
+double calculator( const std::string & input);
 #endif

@@ -2,7 +2,7 @@
 second homework project
 */
 #include "stack.hpp"
-int calculator( const std::string & input){
+double calculator( const std::string & input){
     int len = 0;
     std::istringstream iss(input);
     std::string tk;
@@ -14,10 +14,10 @@ int calculator( const std::string & input){
     iss.seekg(0);
     while (iss >> tk){
         if (isdigit(tk[0])){
-            stack.add(std::stoi(tk));
+            stack.add(std::stod(tk));
         } else {
-            int b = stack.del();
-            int a = stack.del();
+            double b = stack.del();
+            double a = stack.del();
             
             if (tk == "+"){
                 stack.add(a + b);
