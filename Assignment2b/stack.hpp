@@ -13,6 +13,7 @@ private:
 public:
     Stack(int size);
     ~Stack();
+    /* Эти функции обычно назваются, push, pop, top */
     void add(double x);
     double del();
     double take() const;
