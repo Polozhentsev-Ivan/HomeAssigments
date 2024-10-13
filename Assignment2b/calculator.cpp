@@ -22,6 +22,7 @@ double calculator( const std::string & input){
             if (tk == "+"){
                 stack.add(a + b);
             } else if (tk == "-"){
+                // Минус еще и унарный бывает
                 stack.add(a - b);
             } else if (tk == "*"){
                 stack.add(a * b);
