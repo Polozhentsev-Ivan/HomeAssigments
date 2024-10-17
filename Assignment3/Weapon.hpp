@@ -1,8 +1,8 @@
 /* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
 third homework project
 */
-#ifndef TRANSFORMER_HPP
-#define TRANSFORMER_HPP
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 #include <iostream>
 #include <string>
 Class Weapon{
