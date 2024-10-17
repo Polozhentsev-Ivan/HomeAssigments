@@ -11,9 +11,12 @@ private:
     uint population;
 
 public:
-uint getpopulation();
-void setpopulation(uint p);
-std::string getName();
-void setName(std::string n);
+    Planet();
+    Planet(std::string n);
+    ~Planet();
+    uint Getpopulation();
+    void Setpopulation(uint p);
+    std::string Getname();
+    void Setname(std::string n);
 };
 #endif

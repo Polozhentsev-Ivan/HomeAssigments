@@ -8,6 +8,9 @@ Weapon::~Weapon() {}
 void Setname(std::string n){
     name = n;
 }
+stg::string Getname(){
+    return name;
+}
 int Getammo(){
     return ammo;
 }
