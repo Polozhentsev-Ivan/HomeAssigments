@@ -1,3 +1,6 @@
+/* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
+third homework project
+*/
 #ifndef TRANSFORMER_HPP
 #define TRANSFORMER_HPP
 #include <iostream>
@@ -10,7 +13,7 @@ private:
 
 public:
     Weapon();
-    Weapon(std::string name, uint n, uint d);
+    Weapon(std::string name, uint a, uint d);
     ~Weapon();
     std::string Getname();
     void Setname(std::string n);
