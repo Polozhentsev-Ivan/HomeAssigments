@@ -6,7 +6,8 @@ third homework project
 #include <iostream>
 #include <string>
 #include "Weapon.hpp"
-Class Transformer{
+#include "Planet.hpp"
+class Transformer {
 protected:
     std::string name;
     uint speed;
@@ -14,19 +15,24 @@ protected:
     uint durability;
     Weapon weapon; // композиция
     Planet* planet; // ассоциация
+    std::string fraction;
 
 public:
     Transformer();
-    Transformer(std::string n, uint sp, uint str, uint dur, Weapon w);
+    Transformer(const std::string& n, uint sp, uint str, uint dur, Weapon w);
     virtual ~Transformer();
-    uint Getspeed();
-    uint Getdurability();
-    uint Getstrength();
-    std::string Getname();
-    void SetName(std::string n);
-    void Setspeed(uint sp);
-    void Setstrength(uint str);
-    void Setdurability(uint dur);
+    uint getSpeed() const;
+    uint getDurability() const;
+    uint getStrength() const;
+    std::string getName() const;
+    void setName(const std::string& n);
+    void setSpeed(uint sp);
+    void setStrength(uint str);
+    void setDurability(uint dur);
+    Weapon getWeapon() const;
+    void setWeapon(Weapon w);
+    Planet* getPlanet() const;
+    void setPlanet(Planet* pl);
     
     bool block();
     bool shield();

@@ -3,23 +3,23 @@ third homework project
 */
 #include "Weapon.hpp"
 Weapon::Weapon() : name("default"), ammo(10), damage(0) {}
-Weapon::Weapon(std::string n, uint a, uint d) : name(n), ammo(a), damage(d){}
+Weapon::Weapon(const std::string& n, uint a, uint d) : name(n), ammo(a), damage(d) {}
 Weapon::~Weapon() {}
-void Setname(std::string n){
+void Weapon::setName(const std::string& n) {
     name = n;
 }
-stg::string Getname(){
+std::string Weapon::getName() const {
     return name;
 }
-int Getammo(){
+uint Weapon::getAmmo() const {
     return ammo;
 }
-void Setammo(uint a){
+void Weapon::setAmmo(uint a) {
     ammo = a;
 }
-int Getdamage(){
+uint Weapon::getDamage() const {
     return damage;
 }
-void Setdamage(uint d){
+void Weapon::setDamage(uint d) {
     damage = d;
 }

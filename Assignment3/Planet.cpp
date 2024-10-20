@@ -3,17 +3,17 @@ third homework project
 */
 #include "Planet.hpp"
 Planet::Planet() : name("Unknown"), population(0) {} 
-Planet::Planet(std::string n) : name(n), population(0) {}
+Planet::Planet(const std::string& n) : name(n), population(0) {}
 Planet::~Planet() {}
-std::string Getname(){
+std::string Planet::getName() const {
     return name;
 }
-void Setname(std::string n){
+void Planet::setName(const std::string& n) {
     name = n;
 }
-uint Getpopulation(){
+uint Planet::getPopulation() const {
     return population;
 }
-void Setpopulation(uint p){
-    ++population;
+void Planet::setPopulation(uint p) {
+    population = p;
 }  

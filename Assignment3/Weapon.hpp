@@ -5,7 +5,7 @@ third homework project
 #define WEAPON_HPP
 #include <iostream>
 #include <string>
-Class Weapon{
+class Weapon {
 private:
     std::string name;
     uint damage;
@@ -13,13 +13,13 @@ private:
 
 public:
     Weapon();
-    Weapon(std::string name, uint a, uint d);
+    Weapon(const std::string& name, uint a, uint d);
     ~Weapon();
-    std::string Getname();
-    void Setname(std::string n);
-    int Getammo();
-    void Setammo(uint a);
-    int Getdamage();
-    void Setdamage(uint d);
+    std::string Getname() const;
+    void setName(const std::string& n);
+    uint getAmmo() const;
+    void setAmmo(uint a);
+    uint getDamage() const;
+    void setDamage(uint d);
 };
 #endif

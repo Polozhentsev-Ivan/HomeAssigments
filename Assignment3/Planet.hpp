@@ -5,18 +5,18 @@ third homework project
 #define PLANET_HPP
 #include <iostream>
 #include <string>
-Class Planet{
+class Planet {
 private:
     std::string name;
     uint population;
 
 public:
     Planet();
-    Planet(std::string n);
+    Planet(const std::string& n);
     ~Planet();
-    uint Getpopulation();
-    void Setpopulation(uint p);
-    std::string Getname();
-    void Setname(std::string n);
+    uint getPopulation() const;
+    void setPopulation(uint p);
+    std::string getName() const;
+    void setName(const std::string& n);
 };
 #endif
