@@ -29,7 +29,10 @@ void Transformer::setStrength(uint str) {
 void Transformer::setDurability(uint dur) {
     durability = dur;
 }
-Weapon Transformer::getWeapon() const {
+Weapon& Transformer::getWeapon() {
+    return weapon;
+}
+const Weapon& Transformer::getWeapon() const {
     return weapon;
 }
 Planet* Transformer::getPlanet() const {

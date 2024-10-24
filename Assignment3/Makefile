@@ -10,20 +10,24 @@ LDGTESTFLAGS = $(LDXXFLAGS) -lgtest -lgtest_main -lpthread
 DEPS = $(wildcard *.hpp)
 OBJ = Weapon.o Planet.o Transformer.o Decepticon.o Autobot.o
 TEST_OBJ = google-test.o
-.PHONy: default
-default: all
+.PHONY: default clean cleanall
+default: $(PROJECT)
 %.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CXXGLAGS)
 $(LIBPROJECT): $(OBJ)
 	$(A) $(AFLAGS) $@ $^
 $(PROJECT): main.o $(LIBPROJECT)
-	$(CXX) -o $@ main.o $(LDXXFLAGS)
+	$(CXX) -o $@ main.o $(LDXXFLAGS); \
+	rm -f $(OBJ) main.o $(LIBPROJECT)
 $(TESTPROJECT): $(LIBPROJECT) $(TEST_OBJ)
 	$(CXX) -o $@ $(TEST_OBJ) $(LDGTESTFLAGS)
 test : $(TESTPROJECT)
-	./$(TESTPROJECT)
+	./$(TESTPROJECT); \
+	rm -f $(TESTPROJECT) $(TEST_OBJ)
+	rm -f *.o
+	rm -f *.a
 all : $(PROJECT)
-.PHONY: clean
+
 clean:
 	rm -f *.o
 cleanall: clean

@@ -29,7 +29,8 @@ public:
     void setSpeed(uint sp);
     void setStrength(uint str);
     void setDurability(uint dur);
-    Weapon getWeapon() const;
+    Weapon& getWeapon();
+    const Weapon& getWeapon() const;
     void setWeapon(Weapon w);
     Planet* getPlanet() const;
     void setPlanet(Planet* pl);
