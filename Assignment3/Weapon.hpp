@@ -15,7 +15,7 @@ public:
     Weapon();
     Weapon(const std::string& name, uint a, uint d);
     ~Weapon();
-    std::string Getname() const;
+    std::string getName() const;
     void setName(const std::string& n);
     uint getAmmo() const;
     void setAmmo(uint a);

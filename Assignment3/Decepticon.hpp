@@ -11,7 +11,7 @@ private:
     std::string current_state;
 public:
     Decepticon();
-    Decepticon(const std::string& tf, int k)
+    Decepticon(const std::string& tf, int k, const std::string& n, uint sp, uint str, uint dur, Weapon w);
     int getKarma() const;
     void setKarma(int k);
     std::string getTransformation() const;

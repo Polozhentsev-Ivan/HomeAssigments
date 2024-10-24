@@ -11,7 +11,7 @@ private:
     std::string current_state;
 public:
     Autobot();
-    Autobot(const std::string& tf, int k)
+    Autobot(const std::string& tf, int k, const std::string& n, uint sp, uint str, uint dur, Weapon w);
     int getKarma() const;
     void setKarma(int k);
     std::string getTransformation() const;

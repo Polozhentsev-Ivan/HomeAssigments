@@ -17,7 +17,7 @@ uint Transformer::getStrength() const {
 std::string Transformer::getName() const {
     return name;
 }
-void Transformer::setName(std::string n) {
+void Transformer::setName(const std::string& n) {
     name = n;
 }
 void Transformer::setSpeed(uint sp) {
