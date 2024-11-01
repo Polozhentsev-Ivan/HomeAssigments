@@ -217,21 +217,21 @@ TEST(DinoTest, 3)
 }
 
 
-TEST(WeaponTest, OutputOperator) 
+TEST(WeaponTest, OutputOperator)
 {
     Weapon w("Blaster", 50, 20);
     std::stringstream ss;
     ss << w;
     EXPECT_EQ(ss.str(), "Weapon(Name: Blaster, Damage: 50, Ammo: 20)");
 }
-TEST(WeaponTest, ComparisonOperators) 
+TEST(WeaponTest, ComparisonOperators)
 {
     Weapon w1("Blaster", 20, 50);
     Weapon w2("Cannon", 15, 60);
     EXPECT_TRUE(w1 > w2);
     EXPECT_FALSE(w1 == w2);
 }
-TEST(PlanetTest, OutputOperator) 
+TEST(PlanetTest, OutputOperator)
 {
     Planet p("Cybertron");
     p.setPopulation(1000);
@@ -239,7 +239,7 @@ TEST(PlanetTest, OutputOperator)
     ss << p;
     EXPECT_EQ(ss.str(), "Planet(Name: Cybertron, Population: 1000)");
 }
-TEST(TransformerTest, OutputOperator) 
+TEST(TransformerTest, OutputOperator)
 {
     Weapon w("Laser", 60, 30);
     Transformer t("Optimus", 50, 80, 70, w);
@@ -248,7 +248,7 @@ TEST(TransformerTest, OutputOperator)
     std::string expected = "Transformer(Name: Optimus, Fraction: none, Speed: 50, Strength: 80, Durability: 70, Weapon: Weapon(Name: Laser, Damage: 60, Ammo: 30), Location: Somewhere in space)";
     EXPECT_EQ(ss.str(), expected);
 }
-TEST(TransformerTest, ComparisonOperators) 
+TEST(TransformerTest, ComparisonOperators)
 {
     Weapon w1("Blaster", 20, 50);
     Weapon w2("Cannon", 15, 60);
@@ -257,7 +257,7 @@ TEST(TransformerTest, ComparisonOperators)
     EXPECT_TRUE(t1 < t2);
     EXPECT_FALSE(t1 == t2);
 }
-TEST(AutobotTest, OutputOperator) 
+TEST(AutobotTest, OutputOperator)
 {
     Weapon w("Blaster", 50, 20);
     Autobot a("Optimus", 50, 80, 70, w, "Truck", 100);
@@ -266,7 +266,7 @@ TEST(AutobotTest, OutputOperator)
     std::string expected = "Transformer(Name: Optimus, Fraction: Autobot, Speed: 50, Strength: 80, Durability: 70, Weapon: Weapon(Name: Blaster, Damage: 50, Ammo: 20), Location: Somewhere in space), Transformation: Truck, Karma: 100, Current State: car)";
     EXPECT_EQ(ss.str(), expected);
 }
-TEST(AutobotTest, ComparisonOperators) 
+TEST(AutobotTest, ComparisonOperators)
 {
     Weapon w1("Blaster", 20, 50);
     Weapon w2("Cannon", 15, 60);

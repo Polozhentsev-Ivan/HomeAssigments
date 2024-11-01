@@ -3,9 +3,9 @@ fourth homework project
 */
 #include "Planet.hpp"
 Planet::Planet() : name("Unknown"), population(0) {}
-Planet::Planet(const std::string& n) : 
-    name(n), 
-    population(0) 
+Planet::Planet(const std::string& n) :
+    name(n),
+    population(0)
 {}
 Planet::~Planet() {}
 std::string Planet::getName() const

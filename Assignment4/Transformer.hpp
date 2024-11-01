@@ -39,7 +39,7 @@ public:
     bool block();
     bool shield();
     bool fire();
-    
+
     bool operator>(const Transformer& other) const;
     bool operator<(const Transformer& other) const;
     bool operator==(const Transformer& other) const;

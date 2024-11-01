@@ -3,10 +3,10 @@ fourth homework project
 */
 #include "Weapon.hpp"
 Weapon::Weapon() : name("default"), damage(1), ammo(0) {}
-Weapon::Weapon(const std::string& n, uint d, uint a) : 
-    name(n), 
-    ammo(a), 
-    damage(d) 
+Weapon::Weapon(const std::string& n, uint d, uint a) :
+    name(n),
+    ammo(a),
+    damage(d)
 {}
 Weapon::~Weapon() {}
 void Weapon::setName(const std::string& n)

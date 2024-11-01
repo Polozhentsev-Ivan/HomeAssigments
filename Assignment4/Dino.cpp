@@ -6,10 +6,10 @@ Dinosaur::Dinosaur() : transformation(""), karma(0), current_state("car")
 {
     fraction = "Dinosaur";
 }
-Dinosaur::Dinosaur(const std::string& n, uint sp, uint str, uint dur, Weapon w, int k) : 
-    Transformer(n, sp, str, dur, w), 
-    transformation("Dinosaur"), 
-    karma(k), 
+Dinosaur::Dinosaur(const std::string& n, uint sp, uint str, uint dur, Weapon w, int k) :
+    Transformer(n, sp, str, dur, w),
+    transformation("Dinosaur"),
+    karma(k),
     current_state("car")
 {
     fraction = "Dinosaur";

@@ -6,10 +6,10 @@ Decepticon::Decepticon() : transformation(""), karma(0), current_state("car")
 {
     fraction = "Decepticon";
 }
-Decepticon::Decepticon(const std::string& n, uint sp, uint str, uint dur, Weapon w, const std::string& tf, int k) : 
-    Transformer(n, sp, str, dur, w), 
-    transformation(tf), 
-    karma(k), 
+Decepticon::Decepticon(const std::string& n, uint sp, uint str, uint dur, Weapon w, const std::string& tf, int k) :
+    Transformer(n, sp, str, dur, w),
+    transformation(tf),
+    karma(k),
     current_state("car")
 {
     fraction = "Decepticon";

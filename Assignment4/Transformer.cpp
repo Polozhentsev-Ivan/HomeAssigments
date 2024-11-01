@@ -3,14 +3,14 @@ fourth homework project
 */
 #include "Transformer.hpp"
 Transformer::Transformer() : name("unnamed"), fraction("none"), speed(0), strength(0), durability(0), weapon(Weapon()), planet(nullptr) {}
-Transformer::Transformer(const std::string& n, uint sp, uint str, uint dur, Weapon w) : 
-    name(n), 
-    fraction("none"), 
-    speed(sp), 
-    strength(str), 
-    durability(dur), 
-    weapon(w), 
-    planet(nullptr) 
+Transformer::Transformer(const std::string& n, uint sp, uint str, uint dur, Weapon w) :
+    name(n),
+    fraction("none"),
+    speed(sp),
+    strength(str),
+    durability(dur),
+    weapon(w),
+    planet(nullptr)
 {}
 Transformer::~Transformer() {}
 uint Transformer::getSpeed() const
@@ -120,14 +120,14 @@ std::ostream& operator<<(std::ostream& os, const Transformer& t)
        << ", Strength: " << t.strength
        << ", Durability: " << t.durability
        << ", Weapon: " << t.weapon;
-       if (t.planet) 
-       {
-          os << ", Location: " << t.planet->getName();
-       } 
-       else 
-       {
-           os << ", Location: Somewhere in space";
-       }
+    if (t.planet)
+    {
+        os << ", Location: " << t.planet->getName();
+    }
+    else
+    {
+        os << ", Location: Somewhere in space";
+    }
     os << ")";
     return os;
 }
