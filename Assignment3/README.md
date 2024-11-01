@@ -4,7 +4,7 @@
 ## Contacts
 st130976@student.spbu.ru
 ## Description
-Home assignment 3. This project is about hierarchy of classed. It defines classes such as 'Autobot', 'Decepticon', 'Transformer', 'Weapon' and 'Planet' to model the characteristics and behaviors of these entities. The project includes unit tests written with Google Test.
+Home assignment 3. This project is about hierarchy of classed. It defines classes such as 'Autobot', 'Decepticon', 'Transformer', 'Dino', 'Weapon' and 'Planet' to model the characteristics and behaviors of these entities. The project includes unit tests written with Google Test.
 ## Build
 make
 ## Run

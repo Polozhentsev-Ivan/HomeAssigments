@@ -3,7 +3,7 @@
 
 int main()
 {
-    Transformer transformer;
+    Transformer transformer();
     return 0;
 }
 
