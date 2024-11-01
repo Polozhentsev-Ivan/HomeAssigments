@@ -1,18 +1,18 @@
 /* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
 third homework project
 */
-#ifndef AUTOBOT_HPP
-#define AUTOBOT_HPP
+#ifndef DINO_HPP
+#define DINO_HPP
 #include "Transformer.hpp"
-class Autobot : public Transformer
+class Dinosaur : public Transformer
 {
 private:
     std::string transformation;
     int karma;
     std::string current_state;
 public:
-    Autobot();
-    Autobot(const std::string& n, uint sp, uint str, uint dur, Weapon w, const std::string& tf, int k);
+    Dinosaur();
+    Dinosaur( const std::string& n, uint sp, uint str, uint dur, Weapon w, int k);
     int getKarma() const;
     void setKarma(int k);
     std::string getTransformation() const;

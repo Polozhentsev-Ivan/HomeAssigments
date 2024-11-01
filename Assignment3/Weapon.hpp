@@ -5,7 +5,8 @@ third homework project
 #define WEAPON_HPP
 #include <iostream>
 #include <string>
-class Weapon {
+class Weapon
+{
 private:
     std::string name;
     uint damage;

@@ -11,5 +11,5 @@ make
 ./transformer
 ## Build Test
 make test
-## Run
+## Run Test
 Running straight after build

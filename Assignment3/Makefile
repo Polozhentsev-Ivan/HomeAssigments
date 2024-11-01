@@ -8,7 +8,7 @@ CXXFLAGS = -I. -std=c++17 -Wall -g -fPIC
 LDXXFLAGS = $(CXXGLAGS) -L. -l:$(LIBPROJECT)
 LDGTESTFLAGS = $(LDXXFLAGS) -lgtest -lgtest_main -lpthread
 DEPS = $(wildcard *.hpp)
-OBJ = Weapon.o Planet.o Transformer.o Decepticon.o Autobot.o
+OBJ = Weapon.o Planet.o Transformer.o Decepticon.o Autobot.o Dino.o
 TEST_OBJ = google-test.o
 .PHONY: default clean cleanall
 default: $(PROJECT)

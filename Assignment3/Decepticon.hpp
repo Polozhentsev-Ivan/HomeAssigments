@@ -4,14 +4,15 @@ third homework project
 #ifndef DECEPTICON_HPP
 #define DECEPTICON_HPP
 #include "Transformer.hpp"
-class Decepticon : public Transformer {
+class Decepticon : public Transformer
+{
 private:
     std::string transformation;
     int karma;
     std::string current_state;
 public:
     Decepticon();
-    Decepticon(const std::string& tf, int k, const std::string& n, uint sp, uint str, uint dur, Weapon w);
+    Decepticon(const std::string& n, uint sp, uint str, uint dur, Weapon w, const std::string& tf, int k);
     int getKarma() const;
     void setKarma(int k);
     std::string getTransformation() const;

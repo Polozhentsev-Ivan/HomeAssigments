@@ -5,7 +5,8 @@ third homework project
 #define PLANET_HPP
 #include <iostream>
 #include <string>
-class Planet {
+class Planet
+{
 private:
     std::string name;
     uint population;

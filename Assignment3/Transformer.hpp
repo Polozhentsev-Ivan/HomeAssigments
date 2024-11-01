@@ -7,7 +7,8 @@ third homework project
 #include <string>
 #include "Weapon.hpp"
 #include "Planet.hpp"
-class Transformer {
+class Transformer
+{
 protected:
     std::string name;
     uint speed;
@@ -34,7 +35,7 @@ public:
     void setWeapon(Weapon w);
     Planet* getPlanet() const;
     void setPlanet(Planet* pl);
-    
+
     bool block();
     bool shield();
     bool fire();

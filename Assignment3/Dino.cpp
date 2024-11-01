@@ -1,32 +1,32 @@
 /* Polozhentsev Ivan iv.poloz.wdesd@mail.ru
 third homework project
 */
-#include "Autobot.hpp"
-Autobot::Autobot() : transformation(""), karma(0), current_state("car")
+#include "Dino.hpp"
+Dinosaur::Dinosaur() : transformation(""), karma(0), current_state("car")
 {
-    fraction = "Autobot";
+    fraction = "Dinosaur";
 }
-Autobot::Autobot(const std::string& n, uint sp, uint str, uint dur, Weapon w, const std::string& tf, int k) : 
+Dinosaur::Dinosaur(const std::string& n, uint sp, uint str, uint dur, Weapon w, int k) : 
     Transformer(n, sp, str, dur, w), 
-    transformation(tf), 
+    transformation("Dinosaur"), 
     karma(k), 
     current_state("car")
 {
-    fraction = "Autobot";
+    fraction = "Dinosaur";
 }
-int Autobot::getKarma() const
+int Dinosaur::getKarma() const
 {
     return karma;
 }
-void Autobot::setKarma(int k)
+void Dinosaur::setKarma(int k)
 {
     karma = k;
 }
-std::string Autobot::getTransformation() const
+std::string Dinosaur::getTransformation() const
 {
     return transformation;
 }
-bool Autobot::setTransformation(const std::string& tf)
+bool Dinosaur::setTransformation(const std::string& tf)
 {
     if (transformation != "car")
     {
@@ -39,7 +39,7 @@ bool Autobot::setTransformation(const std::string& tf)
         return true;
     };
 }
-bool Autobot::transformtoAlt()
+bool Dinosaur::transformtoAlt()
 {
     if (current_state != "car")
     {
@@ -52,7 +52,7 @@ bool Autobot::transformtoAlt()
         return true;
     };
 }
-bool Autobot::transformBack()
+bool Dinosaur::transformBack()
 {
     if (current_state == "car")
     {
