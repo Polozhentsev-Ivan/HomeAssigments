@@ -5,7 +5,7 @@ CXX = g++
 A = ar
 AFLAGS = rsv
 CXXFLAGS = -I. -std=c++17 -Wall -g -fPIC -Werror -Wpedantic
-LDXXFLAGS = $(CXXGLAGS) -L. -l:$(LIBPROJECT)
+LDXXFLAGS = $(CXXFLAGS) -L. -l:$(LIBPROJECT)
 LDGTESTFLAGS = $(LDXXFLAGS) -lgtest -lgtest_main -lpthread
 DEPS = $(wildcard *.hpp)
 OBJ = Weapon.o Planet.o Transformer.o Decepticon.o Autobot.o
@@ -13,7 +13,7 @@ TEST_OBJ = google-test.o
 .PHONY: default clean cleanall
 default: $(PROJECT)
 %.o: %.cpp $(DEPS)
-	$(CXX) -c -o $@ $< $(CXXGLAGS)
+	$(CXX) -c -o $@ $< $(CXXFLAGS)
 $(LIBPROJECT): $(OBJ)
 	$(A) $(AFLAGS) $@ $^
 $(PROJECT): main.o $(LIBPROJECT)

@@ -5,8 +5,8 @@ fifth homework project
 Weapon::Weapon() : name("default"), damage(1), ammo(0) {}
 Weapon::Weapon(const std::string& n, uint d, uint a) :
     name(n),
-    ammo(a),
-    damage(d)
+    damage(d),
+    ammo(a)
 {}
 Weapon::~Weapon() {}
 void Weapon::setName(const std::string& n)

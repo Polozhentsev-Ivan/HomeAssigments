@@ -11,12 +11,13 @@ class Transformer
 {
 protected:
     std::string name;
+    std::string fraction;
     uint speed;
     uint strength;
     uint durability;
     Weapon weapon; // композиция
     Planet* planet; // ассоциация
-    std::string fraction;
+
 
 public:
     virtual void strike() const;
